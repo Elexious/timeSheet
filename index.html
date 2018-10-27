@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Employee data management</h1>
+          <p class="lead">A comprehensive Directory of Employee Biliable hours</p>
+        </div>
+    </div>  
+    <div class = 'container'>
+        <table class="table">
+            <div class="card-header">
+                Current Employess
+            </div>
+            <thead class="thead-dark">
+                <tr>
+                <th class = 'tablecolumnheader' scope="col">Employee name</th>
+                <th class = 'tablecolumnheader' scope="col">Role</th>
+                <th class = 'tablecolumnheader' scope="col">Start Date</th>
+                <th class = 'tablecolumnheader' scope="col">Months worked</th>
+                <th class = 'tablecolumnheader' scope="col">Monthly Rase($)</th>
+                <th class = 'tablecolumnheader' scope="col">Total Billed($)</th>
+                </tr>
+            </thead>
+            <tbody id = 'parentfornewemployee'>
+                <tr>
+                    <th>John Doe</th>
+                    <td>CPO</td>
+                    <td>08/21/2018</td>
+                    <td>18</td>
+                    <td>2000</td>
+                    <td>36000</td>
+                </tr>
+                <tr>
+                    <th>Jane Doe</th>
+                    <td>CEO</td>
+                    <td>08/21/2018</td>
+                    <td>22</td>
+                    <td>1000</td>
+                    <td>36000</td>
+                </tr>
+                <tr>
+                    <th>Super Man</th>
+                    <td>CFO</td>
+                    <td>08/21/2018</td>
+                    <td>14</td>
+                    <td>5000</td>
+                    <td>36000</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class = 'inputblock'>
+            <div class="card-header" id ='secondheader'>
+                Add new Employee
+            </div>
+            <div class="input-group mb-3">
+                <div class= 'inputheader'>Employee name</div>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="employeename" aria-describedby="basic-addon3">
+                </div>
+            </div>
+
+            <div class="input-group mb-3">
+                <div class= 'inputheader'>Employee role</div>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="employeerole"  aria-describedby="basic-addon3">
+                </div>
+            </div>
+
+            <div class="input-group mb-3">
+                <div class= 'inputheader'>Start Date</div>
+                <div class="input-group mb-3">
+                    <input type="date" class="form-control" id="startdate" aria-describedby="basic-addon3">
+                </div>
+            </div>
+
+            <div class="input-group mb-3">
+                <div class= 'inputheader'>Months worked</div>
+                <div class="input-group mb-3">
+                    <input type="number" class="form-control" id="monthsworked" aria-describedby="basic-addon3">
+                </div>
+            </div>
+
+            <div class="input-group mb-3">
+                <div class= 'inputheader'>Monthly Rase</div>
+                <div class="input-group mb-3">
+                    <input type="number" class="form-control" id="rase" aria-describedby="basic-addon3">
+                </div>
+            </div>
+        </div>
+        <button type="button" class="btn btn-warning" id = 'submit'>Submit</button>
+    </div>
+    
+    <script src = 'assets/js/script.js'></script>
+</body>
+</html>
