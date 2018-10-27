@@ -16,7 +16,7 @@ var startDate = "";
 var monthlyRate = "";
 var monthsWorked  = "";
 
-$("#add").on("click", function(event) {
+$("#submit").on("click", function(event) {
     event.preventDefault();
     employeeName = $("#employeename").val().trip();
     role = $("#employeerole").val().trip();
